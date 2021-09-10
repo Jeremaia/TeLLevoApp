@@ -19,6 +19,10 @@ const routes: Routes = [
     path: 'recup-contra',
     loadChildren: () => import('./recup-contra/recup-contra.module').then( m => m.RecupContraPageModule)
   },
+  {
+    path: 'bienvenida',
+    loadChildren: () => import('./bienvenida/bienvenida.module').then( m => m.BienvenidaPageModule)
+  },
 ];
 
 @NgModule({
