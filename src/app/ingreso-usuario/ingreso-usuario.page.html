@@ -11,17 +11,19 @@
     </div>
     <div class="inicio_sesion">
       <form>
-        <ion-item lines=full>
+        
           <ion-label position="floating">Nombre de Usuario</ion-label>
           <ion-input type="text" required></ion-input>
-        </ion-item>
+        
 
         <ion-item lines=full>
           <ion-label position="floating">Contraseña</ion-label>
           <ion-input type="password" required></ion-input>
         </ion-item>
 
-        <ion-button type="submit">Iniciar Sesion</ion-button>
+        <ion-button expand="block" (click)="iniciar()">Iniciar Sesion</ion-button>
+        <ion-button expand="block" (click)="recu()">Recuperar contraseña</ion-button>
+        <ion-button expand="block" (click)="volver()">Volver</ion-button>
         <a [routerLink]="['/recup-contra']">Recuperar Contraseña</a>
       </form>
     </div>

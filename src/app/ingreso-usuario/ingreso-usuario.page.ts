@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-ingreso-usuario',
@@ -7,7 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class IngresoUsuarioPage implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
+
+  recu(){
+    //Utiliza API enrutada para llamar a la siguiente pag
+    this.router.navigate(['/recup-contra'])
+  }
+  volver(){
+    this.router.navigate(['/home'])
+
+  }
 
   ngOnInit() {
   }
