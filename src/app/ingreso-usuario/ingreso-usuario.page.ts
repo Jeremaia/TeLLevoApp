@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { NavigationExtras, Router } from '@angular/router';
 
 @Component({
   selector: 'app-ingreso-usuario',
@@ -7,11 +7,15 @@ import { Router } from '@angular/router';
   styleUrls: ['./ingreso-usuario.page.scss'],
 })
 export class IngresoUsuarioPage implements OnInit {
-
+  dato: string;
   constructor(private router: Router) { }
   
   iniciar(){
-    this.router.navigate(['/bienvenida'])
+    let navigationExtras: NavigationExtras={
+      state:{dato: this.dato}
+    }
+    console.log(this.dato);
+    this.router.navigate(['/bienvenida'], navigationExtras)
   }
 
   recu(){
