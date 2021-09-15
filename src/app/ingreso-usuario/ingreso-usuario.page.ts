@@ -9,6 +9,10 @@ import { Router } from '@angular/router';
 export class IngresoUsuarioPage implements OnInit {
 
   constructor(private router: Router) { }
+  
+  iniciar(){
+    this.router.navigate(['/bienvenida'])
+  }
 
   recu(){
     //Utiliza API enrutada para llamar a la siguiente pag
