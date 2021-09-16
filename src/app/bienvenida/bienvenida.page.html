@@ -1,20 +1,27 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>bienvenida</ion-title>
+    <div class="header">
+      <ion-title>
+        Te LLevoAPP
+      </ion-title>
+    </div>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <div class="cuerpo">
-    <div class="titulo">
-      <h1>Bienvenido/a {{dato}}</h1>
+  <div class="cuerpo_fondo">
+    <div class="cuerpo_titulo">
+      <div class="titulo">
+        <h1>Bienvenido/a {{dato}}</h1>
+      </div>
     </div>
-    <div class="viaje">
-      <p>Seleccione el tipo de viaje que desea realizar:</p>
-      <ion-button full clear>Conducir un viaje</ion-button>
-      <ion-button full [routerLink]="'#'">Unirse a un viaje</ion-button>
-      <ion-button id="boton" expand="block" (click)="cerrar()">Cerrar sesion</ion-button>
+    <div class="cuerpo_centro">
+      <div class="viaje">
+        <p>Seleccione el tipo de viaje que desea realizar:</p>
+        <ion-button full>Conducir un viaje</ion-button>
+        <ion-button full [routerLink]="'#'">Unirse a un viaje</ion-button>
+        <ion-button id="boton" expand="block" (click)="cerrar()">Cerrar sesion</ion-button>
+      </div>
     </div>
-    
   </div>
 </ion-content>
