@@ -1,23 +1,31 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>recup_contra</ion-title>
+    <div class="header">
+      <ion-title>
+        Te LLevoAPP
+      </ion-title>
+    </div>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <div class="cuerpo">
-    <div class="titulo">
-      <h1>Recuperar Contraseña</h1>
+  <div class="cuerpo_fondo">
+    <div class="cuerpo_titulo">
+      <div class="titulo">
+        <h1>Recuperar Contraseña</h1>
+      </div>
     </div>
-    <div class="recuperar">
-      <form>
-        <ion-item lines=full>
-          <ion-label position="floating">Nombre de Usuario</ion-label>
-          <ion-input type="text" required></ion-input>
-        </ion-item>
+    <div class="cuerpo_centro">
+      <div class="recuperar">
+        <form>
+          <ion-item lines=full>
+            <ion-label position="floating">Nombre de Usuario</ion-label>
+            <ion-input type="text" required></ion-input>
+          </ion-item>
 
-        <ion-button type="submit" [routerLink]="['/ingreso-usuario']">Enviar</ion-button>
-      </form>
+          <ion-button type="submit" [routerLink]="['/ingreso-usuario']">Enviar</ion-button>
+        </form>
+      </div>
     </div>
   </div>
 </ion-content>

@@ -1,29 +1,37 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>ingreso_usuario</ion-title>
+    <div class="header">
+      <ion-title>
+        Te LLevoAPP
+      </ion-title>
+    </div>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <div class="cuerpo">
-    <div class="titulo">
-      <h1>TeLLevoApp</h1>
+  <div class="cuerpo_fondo">
+    <div class="cuerpo_titulo">
+      <div class="titulo">
+        <h1>TeLLevoApp</h1>
+      </div>
     </div>
-    <div class="inicio_sesion">
-      <form>
-        <ion-item>
-          <ion-label position="floating">Nombre de Usuario</ion-label>
-          <ion-input type="text" required  [(ngModel)]="dato" [ngModelOptions]="{standalone: true}"></ion-input>
-        </ion-item>
-        <ion-item lines=full>
-          <ion-label position="floating">Contraseña</ion-label>
-          <ion-input type="password" required></ion-input>
-        </ion-item>
+    <div class="cuerpo_centro">
+      <div class="inicio_sesion">
+        <form>
+          <ion-item>
+            <ion-label position="floating">Nombre de Usuario</ion-label>
+            <ion-input type="text" required  [(ngModel)]="dato" [ngModelOptions]="{standalone: true}"></ion-input>
+          </ion-item>
+          <ion-item lines=full>
+            <ion-label position="floating">Contraseña</ion-label>
+            <ion-input type="password" required></ion-input>
+          </ion-item>
 
-        <ion-button expand="block" (click)="iniciar()">Iniciar Sesion</ion-button>
-        <ion-button expand="block" (click)="recu()">Recuperar contraseña</ion-button>
-        <ion-button expand="block" (click)="volver()">Volver</ion-button>
-      </form>
+          <ion-button expand="block" (click)="iniciar()">Iniciar Sesion</ion-button>
+          <ion-button expand="block" (click)="recu()">Recuperar contraseña</ion-button>
+          <ion-button expand="block" (click)="volver()">Volver</ion-button>
+        </form>
+      </div>
     </div>
   </div>
 </ion-content>
