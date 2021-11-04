@@ -6,7 +6,7 @@ import { ActivatedRoute, Router } from '@angular/router';
   templateUrl: './bienvenida.page.html',
   styleUrls: ['./bienvenida.page.scss'],
 })
-export class BienvenidaPage {
+export class BienvenidaPage{
   dato: any;
   constructor(private router:Router, private activeRoute:ActivatedRoute) {
     this.activeRoute.queryParams.subscribe(params=>{
@@ -23,5 +23,12 @@ this.router.navigate(['/ingreso-usuario'])
 
   }
 
+  conducir(){
+    this.router.navigate(['/cond-viaje'])
+  }
+
+  unirse(){
+    this.router.navigate(['/unir-viaje'])
+  }
 
 }

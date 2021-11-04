@@ -18,8 +18,8 @@
     <div class="cuerpo_centro">
       <div class="viaje">
         <p>Seleccione el tipo de viaje que desea realizar:</p>
-        <ion-button full>Conducir un viaje</ion-button>
-        <ion-button full [routerLink]="'#'">Unirse a un viaje</ion-button>
+        <ion-button expand="block" (click)="conducir()">Conducir viaje</ion-button>
+        <ion-button expand="block" (click)="unirse()">Unirse a un viaje</ion-button>
         <ion-button id="boton" expand="block" (click)="cerrar()">Cerrar sesion</ion-button>
       </div>
     </div>
