@@ -1,0 +1,59 @@
+<ion-header>
+  <ion-toolbar>
+    <div class="header">
+      <ion-title>
+        Te LLevoAPP
+      </ion-title>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="cuerpo_fondo">
+    <div class="cuerpo_titulo">
+      <div class="titulo">
+        <h1>Planifique su ruta</h1>
+      </div>
+    </div>    
+    <div class="cuerpo_centro">
+      <ion-item>
+        <ion-label>Destino</ion-label>
+        <ion-select [(ngModel)]="destino">
+          <ion-select-option>Sede Viña del Mar</ion-select-option>
+          <ion-select-option>Sede Valparaiso</ion-select-option>
+        </ion-select>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Hora de salida</ion-label>
+        <ion-select [(ngModel)]="hora">
+          <ion-select-option>06</ion-select-option>
+          <ion-select-option>07</ion-select-option>
+          <ion-select-option>08</ion-select-option>
+          <ion-select-option>09</ion-select-option>
+          <ion-select-option>10</ion-select-option>
+          <ion-select-option>11</ion-select-option>
+          <ion-select-option>12</ion-select-option>
+          <ion-select-option>13</ion-select-option>
+          <ion-select-option>14</ion-select-option>
+          <ion-select-option>15</ion-select-option>
+          <ion-select-option>16</ion-select-option>
+          <ion-select-option>17</ion-select-option>
+        </ion-select>
+        <ion-select [(ngModel)]="minuto">
+          <ion-select-option>00</ion-select-option>
+          <ion-select-option>15</ion-select-option>
+          <ion-select-option>30</ion-select-option>
+          <ion-select-option>45</ion-select-option>
+        </ion-select>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Precio $</ion-label>
+        <ion-input type="number"></ion-input>
+      </ion-item>
+
+      <ion-button id="boton" expand="block" (click)="volver()">Publicar Viaje</ion-button>
+    </div>
+  </div>
+</ion-content>

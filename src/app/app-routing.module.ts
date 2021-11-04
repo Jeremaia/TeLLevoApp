@@ -22,7 +22,15 @@ const routes: Routes = [
   {
     path: 'bienvenida',
     loadChildren: () => import('./bienvenida/bienvenida.module').then( m => m.BienvenidaPageModule)
+  },  {
+    path: 'cond-viaje',
+    loadChildren: () => import('./cond-viaje/cond-viaje.module').then( m => m.CondViajePageModule)
   },
+  {
+    path: 'unir-viaje',
+    loadChildren: () => import('./unir-viaje/unir-viaje.module').then( m => m.UnirViajePageModule)
+  },
+
 ];
 
 @NgModule({

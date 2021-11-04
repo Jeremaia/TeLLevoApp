@@ -1,0 +1,47 @@
+<ion-header>
+  <ion-toolbar>
+    <div class="header">
+      <ion-title>
+        Te LLevoAPP
+      </ion-title>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="cuerpo_fondo">
+    <div class="cuerpo_titulo">
+      <div class="titulo">
+        <h1>Seleccione su viaje</h1>
+      </div>
+    </div>  
+
+    <div class="cuerpo_centro">
+      <!-- Datos temporales, se actualizaran dsp con lo ingresado en crear viaje -->
+      <div class="caja_viaje">
+        <div class="subcajadatos">
+          <p>Sede Viña del Mar</p> 
+          <p>13:45</p>  
+          <p>$3500</p>     
+        </div>
+        <div class="subcajaboton">
+          <ion-button href="#">Contratar</ion-button>
+        </div>        
+      </div>
+
+      <div class="caja_viaje">
+        <div class="subcajadatos">
+          <p>Sede Valparaiso</p> 
+          <p>09:30</p>  
+          <p>$2500</p>     
+        </div>
+        <div class="subcajaboton">
+          <ion-button href="#">Contratar</ion-button>
+        </div>        
+      </div>
+
+      <ion-button id="boton" expand="block" (click)="volver()">Volver</ion-button>
+    </div>
+  </div>
+
+</ion-content>
