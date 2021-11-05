@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NavigationExtras, Router } from '@angular/router';
+import { ProviderService } from 'src/app/provider.service'
 
 @Component({
   selector: 'app-ingreso-usuario',
@@ -8,7 +9,7 @@ import { NavigationExtras, Router } from '@angular/router';
 })
 export class IngresoUsuarioPage implements OnInit {
   dato: string;
-  constructor(private router: Router) { }
+  constructor(private router: Router, private dbservise: ProviderService) { }
   
   iniciar(){
     let navigationExtras: NavigationExtras={
