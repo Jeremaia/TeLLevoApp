@@ -30,6 +30,10 @@ const routes: Routes = [
     path: 'unir-viaje',
     loadChildren: () => import('./unir-viaje/unir-viaje.module').then( m => m.UnirViajePageModule)
   },
+  {
+    path: 'registro',
+    loadChildren: () => import('./registro/registro.module').then( m => m.RegistroPageModule)
+  },
 
 ];
 
