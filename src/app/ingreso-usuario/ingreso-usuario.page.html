@@ -24,7 +24,7 @@
           </ion-item>
           <ion-item lines=full>
             <ion-label position="floating">Contraseña</ion-label>
-            <ion-input type="password" required></ion-input>
+            <ion-input type="password" required [(ngModel)]="pssw" [ngModelOptions]="{standalone: true}"></ion-input>
           </ion-item>
 
           <ion-button expand="block" (click)="iniciar()">Iniciar Sesion</ion-button>
